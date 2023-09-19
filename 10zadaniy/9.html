@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9zadanie</title>
+</head>
+<body>
+    <section onclick="click();return false">
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+    </section>
+    
+    <script>
+        let a = document.body.getElementsByTagName("div", "p");
+        function click() 
+        {
+            a.style.overflow = "hidden";
+        };
+    </script>
+    <style>
+        section{
+            position: absolute;
+            background-color: brown;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
+            background-color: aqua;
+            display: inline-block;
+        }
+        p{
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgb(255, 123, 0);
+            background-color: rgb(255, 0, 242);
+            display: inline-block;
+        }
+    </style>
+</body>
+</html>
